@@ -13,7 +13,7 @@ const forecast = (lat, lon, callback) => {
         }
         else{
         //    callback(undefined, response.body.current.weather_descriptions[0] +". It's currently " +response.body.current.temperature+ " dgrees out. It feels like "+response.body.current.feelslike+" degrees out.")
-        callback(undefined, body.current.weather_descriptions[0] +". It's currently " +body.current.temperature+ " dgrees out. It feels like "+body.current.feelslike+" degrees out.")
+        callback(undefined, body.current.weather_descriptions[0] +". It's currently " +body.current.temperature+ " dgrees out. It feels like "+body.current.feelslike+" degrees out. Wind speed is " +body.current.wind_speed)
             }
    
     })
